@@ -23,7 +23,7 @@ public class TestController {
         return "Hello World";
     }
 
-    @GetMapping("/getAllEmployee")
+    @GetMapping(value = "/getAllEmployee", produces = "")
     public ResponseEntity<List<Employee>> getAllEmployee(){
         List<Employee> result = employeeRepository.findAll();
         if(result == null || result.isEmpty()){
