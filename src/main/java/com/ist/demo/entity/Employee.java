@@ -23,4 +23,6 @@ public class Employee {
     @OneToOne
     @JoinColumn(name = "ROLE_ID")
     private Role role;
+
+    //test comment 123
 }
